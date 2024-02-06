@@ -1,0 +1,21 @@
+.example-form {
+    max-width: 800px; /* Ajusta el ancho máximo según tus necesidades */
+    margin: auto; /* Esto centrará horizontalmente el formulario */
+    padding: 20px; /* Agrega un espacio interior al formulario */
+    }
+    
+    .example-full-width {
+      width: 100%;
+      margin-top: 20px;
+    }
+  
+    .example-full-text {
+      width: 100% !important;
+      margin-top: 20px !important;
+      height: auto !important;
+      min-height: 100px !important;
+      max-height: 1000px !important;
+      overflow-y: auto !important;
+    }
+    
+    

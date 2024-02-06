@@ -1,1 +1,18 @@
-<p>cesar works!</p>
+<form [formGroup]="formulario"  class="example-form">
+    <mat-form-field class="example-full-width">
+        <mat-label>Numero de desplazamiento</mat-label>
+        <input matInput value="3" formControlName = "desplazamiento" >
+    </mat-form-field>
+
+    <mat-form-field class="example-full-width">
+        <mat-label>Palabra a encryptar</mat-label>
+        <input matInput formControlName = "palabra">
+    </mat-form-field>
+
+    <button mat-raised-button color="primary" class="example-full-width" [disabled]="formulario.invalid" (click)="submitForm()">Encrypt</button>
+    
+      <mat-form-field class="example-full-text">
+        <mat-label>palabra encryptada</mat-label>
+        <textarea matInput formControlName = "mensaje"></textarea>
+      </mat-form-field>
+ </form>
